@@ -4,7 +4,7 @@ import string
 
 a = 200
 
-def id_generator(size=5, chars=string.ascii_uppercase + string.ascii_lowercase + string.digits):
+def id_generator(size=5, chars=string.ascii_uppercase + string.ascii_lowercase):
     return ''.join(random.choice(chars) for _ in range(size))
 num = id_generator()
 
